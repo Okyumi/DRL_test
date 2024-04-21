@@ -4,11 +4,11 @@ This project demonstrates the implementation of the REINFORCE algorithm, a polic
 
 ## Requirements
 
-- Python 3.x
+- Python 3.10
 - OpenAI Gym
 - PyTorch
 - Matplotlib
-- NumPy
+- NumPy == 1.24
 
 ## Installation
 
