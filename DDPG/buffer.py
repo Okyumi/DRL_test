@@ -12,7 +12,7 @@ class ReplayBuffer():
         self.terminal_memory = np.zeros(self.mem_size, dtype=np.bool_) # as a mask for setting the critic values for the new states to zero
 
     def store_transition(self, state, action, reward, state_, done):
-        index = self.cntr % self.mem_size
+        index = self.mem_cntr % self.mem_size
         self.state_memory[index] = state
         self.action_memory[index] = action
         self.reward_memory[index] = reward
