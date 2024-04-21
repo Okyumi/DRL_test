@@ -10,7 +10,7 @@ def plot_learning_curve(scores, x, figure_file):
         plt.plot(x, running_avg)
         plt.title('Running average of previous 100 scores')
         plt.savefig(figure_file)
-        plt.close()
+        #plt.close()
 
 if __name__ == '__main__':
     env = gym.make('LunarLander-v2')
@@ -44,3 +44,4 @@ if __name__ == '__main__':
     # after all the iterations, we are going to start the plot
     x = [i+1 for i in range(len(scores))]
     plot_learning_curve(scores, x, figure_file)
+    env.close()
