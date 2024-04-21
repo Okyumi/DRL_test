@@ -1,7 +1,8 @@
 import gym
 
 if __name__=='__main__':
-    env = gym.make("LunarLander-v2", render_mode="human")
+    #env = gym.make("LunarLander-v2", render_mode="human")
+    env = gym.make("LunarLander-v2")
 
     n_games = 100
 
