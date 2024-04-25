@@ -36,3 +36,14 @@ Replay bUFFER
  - store_transition()
  - no casting to pytorch tensors
  - using numpy arrays
+
+Critic Network
+- Two hidden layers; 400*300; ReLU activation
+- lr 1*e-3, L2weight decay 0.01
+- output layer random weights [-3e-3, 3e-3], others [-1/sqrt(f), 1/sqrt(f)]
+- Batch normalization prior to action input 
+
+Agent Initializer
+- __ini__, choose_action, store_transition
+- Actor n Critic network, action noise functionality
+- interfaces to save checkpoints
