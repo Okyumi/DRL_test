@@ -47,3 +47,5 @@ Agent Initializer
 - __ini__, choose_action, store_transition
 - Actor n Critic network, action noise functionality
 - interfaces to save checkpoints
+
+Good to know.
