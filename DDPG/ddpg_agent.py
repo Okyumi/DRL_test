@@ -90,7 +90,7 @@ class Agent():
         self.critic.optimizer.step()
         # calculate the loss for the actor now
         self.actor.optimizer.zero_grad()
-        actor_loss = -self.critic.forward(states, self.actor.forward(states))
+        actor_loss = -self.critic.forward(states, self.actor.forward(states)) # updating the actor.
         actor_loss = T.mean(actor_loss)
         actor_loss.backward()
         self.actor.optimizer.step()
